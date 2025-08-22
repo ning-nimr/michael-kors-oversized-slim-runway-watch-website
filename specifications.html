@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Specifications - Michael Kors Oversized Slim Runway Men's Watch</title>
+    <style>
+        :root {
+            --primary-color: #333;
+            --secondary-color: #777;
+            --accent-color: #c0a060;
+            --light-bg: #f9f9f9;
+            --border-color: #ddd;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: #fff;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .product-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 2rem;
+            gap: 2rem;
+        }
+        
+        .product-image {
+            flex: 0 0 300px;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.03);
+        }
+        
+        .product-info {
+            flex: 1;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .brand {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin: 1rem 0;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .stars {
+            color: gold;
+            margin-right: 0.5rem;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .specs-table th, .specs-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .specs-table th {
+            background-color: var(--light-bg);
+            font-weight: bold;
+        }
+        
+        .specs-table tr:hover {
+            background-color: var(--light-bg);
+        }
+        
+        .features-list {
+            list-style-type: none;
+            margin: 1rem 0;
+        }
+        
+        .features-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .features-list li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -0.2rem;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 2rem 0;
+        }
+        
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background-color: var(--light-bg);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .rating-distribution {
+            margin: 2rem 0;
+        }
+        
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .rating-label {
+            flex: 0 0 60px;
+        }
+        
+        .rating-progress {
+            flex: 1;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+        
+        .rating-fill {
+            height: 100%;
+            background-color: var(--accent-color);
+        }
+        
+        .rating-percent {
+            flex: 0 0 40px;
+            text-align: right;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .product-header {
+                flex-direction: column;
+            }
+            
+            .product-image {
+                flex: 0 0 100%;
+                margin-bottom: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Product Specifications</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="product-header">
+            <img src="https://m.media-amazon.com/images/I/71-32BOYPrL._AC_SL1500.jpg" alt="Michael Kors Oversized Slim Runway Men's Watch" class="product-image">
+            
+            <div class="product-info">
+                <h1>Michael Kors Oversized Slim Runway Men's Watch</h1>
+                <div class="brand">Brand: Michael Kors</div>
+                <div class="price">$225.00</div>
+                
+                <div class="rating">
+                    <div class="stars">★★★★★</div>
+                    <div>4.7 out of 5 (9,089 ratings)</div>
+                </div>
+                
+                <div class="gallery">
+                    <img src="https://m.media-amazon.com/images/I/31cMo88IO2L._AC_SL1500.jpg" alt="Michael Kors Watch - Side View">
+                    <img src="https://m.media-amazon.com/images/I/21ZZ2fWg5eL._AC_SL1500.jpg" alt="Michael Kors Watch - Close Up">
+                    <img src="https://m.media-amazon.com/images/I/41DFpvZXogL._AC_SL1500.jpg" alt="Michael Kors Watch - Wrist View">
+                    <img src="https://m.media-amazon.com/images/I/31sQlG3VOHL._AC_SL1500.jpg" alt="Michael Kors Watch - Detail">
+                </div>
+            </div>
+        </div>
+        
+        <section class="section">
+            <h2>Product Overview</h2>
+            <p>The black IP Michael Kors Slim Runway watch is polished perfection. A classic three-link bracelet and monochromatic sunray dial with stick indexes add up to a wear-with-everything timepiece that dresses up and down with ease.</p>
+            
+            <ul class="features-list">
+                <li>Case & Dial: Round 44mm stainless steel case with a black dial; mineral crystal face resists scratches</li>
+                <li>Watch Band: Black stainless steel bracelet band; 22mm band width; links can be removed for a customized fit</li>
+                <li>Movement: Quartz movement with three-hand analog display; imported</li>
+                <li>Water Resistant: Up to 50m (165ft): Wearable while swimming in shallow water; 5 ATM</li>
+            </ul>
+        </section>
+        
+        <h2>Technical Specifications</h2>
+        <table class="specs-table">
+            <tr>
+                <th>Specification</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Model Number</td>
+                <td>MK8507</td>
+            </tr>
+            <tr>
+                <td>Material</td>
+                <td>Stainless-steel</td>
+            </tr>
+            <tr>
+                <td>Case Size</td>
+                <td>44mm</td>
+            </tr>
+            <tr>
+                <td>Band Width</td>
+                <td>22mm</td>
+            </tr>
+            <tr>
+                <td>Movement Type</td>
+                <td>Quartz</td>
+            </tr>
+            <tr>
+                <td>Display</td>
+                <td>Analog (Three-hand)</td>
+            </tr>
+            <tr>
+                <td>Water Resistance</td>
+                <td>50m (5 ATM)</td>
+            </tr>
+            <tr>
+                <td>Crystal</td>
+                <td>Mineral</td>
+            </tr>
+            <tr>
+                <td>Band Material</td>
+                <td>Stainless Steel</td>
+            </tr>
+            <tr>
+                <td>Clasp Type</td>
+                <td>Fold-over with safety</td>
+            </tr>
+            <tr>
+                <td>Battery</td>
+                <td>1 Lithium Metal battery required</td>
+            </tr>
+            <tr>
+                <td>Product Dimensions</td>
+                <td>3.46 x 3.7 x 3.7 inches</td>
+            </tr>
+            <tr>
+                <td>Weight</td>
+                <td>4.23 ounces</td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td>Men's</td>
+            </tr>
+            <tr>
+                <td>Manufacturer</td>
+                <td>Michael Kors Watches</td>
+            </tr>
+            <tr>
+                <td>Discontinued by Manufacturer</td>
+                <td>No</td>
+            </tr>
+        </table>
+        
+        <section class="section">
+            <h2>Features & Benefits</h2>
+            <ul class="features-list">
+                <li><strong>Versatile Design:</strong> The black IP finish and classic three-link bracelet create a wear-with-everything timepiece that dresses up and down with ease.</li>
+                <li><strong>Premium Materials:</strong> Stainless steel construction ensures durability and a luxurious feel.</li>
+                <li><strong>Scratch Resistant:</strong> Mineral crystal face resists scratches for long-lasting clarity.</li>
+                <li><strong>Customizable Fit:</strong> Links can be removed from the bracelet band for a personalized fit.</li>
+                <li><strong>Water Resistant:</strong> 5 ATM water resistance (up to 50m/165ft) makes it suitable for swimming in shallow water.</li>
+                <li><strong>Reliable Movement:</strong> Quartz movement provides accurate timekeeping with minimal maintenance.</li>
+                <li><strong>Elegant Display:</strong> Monochromatic sunray dial with stick indexes offers a clean, sophisticated look.</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Customer Ratings</h2>
+            <p>Overall Rating: <strong>4.7 out of 5</strong> based on 9,089 ratings</p>
+            
+            <div class="rating-distribution">
+                <div class="rating-bar">
+                    <div class="rating-label">5 star</div>
+                    <div class="rating-progress">
+                        <div class="rating-fill" style="width: 87%"></div>
+                    </div>
+                    <div class="rating-percent">87%</div>
+                </div>
+                
+                <div class="rating-bar">
+                    <div class="rating-label">4 star</div>
+                    <div class="rating-progress">
+                        <div class="rating-fill" style="width: 8%"></div>
+                    </div>
+                    <div class="rating-percent">8%</div>
+                </div>
+                
+                <div class="rating-bar">
+                    <div class="rating-label">3 star</div>
+                    <div class="rating-progress">
+                        <div class="rating-fill" style="width: 2%"></div>
+                    </div>
+                    <div class="rating-percent">2%</div>
+                </div>
+                
+                <div class="rating-bar">
+                    <div class="rating-label">2 star</div>
+                    <div class="rating-progress">
+                        <div class="rating-fill" style="width: 1%"></div>
+                    </div>
+                    <div class="rating-percent">1%</div>
+                </div>
+                
+                <div class="rating-bar">
+                    <div class="rating-label">1 star</div>
+                    <div class="rating-progress">
+                        <div class="rating-fill" style="width: 2%"></div>
+                    </div>
+                    <div class="rating-percent">2%</div>
+                </div>
+            </div>
+            
+            <div class="review-aspects">
+                <h3 class="section-title">What customers say</h3>
+                <ul class="features-list">
+                    <li><strong>Looks:</strong> Positive feedback on the watch's appearance</li>
+                    <li><strong>Value for money:</strong> Positive feedback on the price-to-quality ratio</li>
+                    <li><strong>Quality:</strong> Positive feedback on build quality and durability</li>
+                    <li><strong>Gift value:</strong> Positive feedback when purchased as a gift</li>
+                    <li><strong>Weight:</strong> Positive feedback on the comfortable weight</li>
+                    <li><strong>Readability:</strong> Positive feedback on dial clarity</li>
+                    <li><strong>Comfort:</strong> Positive feedback on wearing comfort</li>
+                    <li><strong>Size:</strong> Mixed feedback - some find it appropriately sized while others say it's too large</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Documentation & Support</h2>
+            <ul class="features-list">
+                <li>Instructions for Use (IFU)</li>
+                <li>User Guide</li>
+                <li>User Manual</li>
+                <li>2-Year Protection Plan available for $24.99</li>
+                <li>3-Year Protection Plan available for $33.99</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Michael Kors. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Add interactivity to gallery images
+        const galleryImages = document.querySelectorAll('.gallery img');
+        const mainImage = document.querySelector('.product-image');
+        
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                const tempSrc = mainImage.src;
+                mainImage.src = img.src;
+                img.src = tempSrc;
+            });
+        });
+    </script>
+</body>
+</html>
