@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Kors Oversized Slim Runway Men's Watch - Features</title>
+    <style>
+        :root {
+            --primary-color: #000;
+            --secondary-color: #333;
+            --accent-color: #b8860b;
+            --light-color: #f8f8f8;
+            --border-color: #ddd;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-color);
+            color: var(--secondary-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .product-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+            gap: 2rem;
+        }
+        
+        .product-images {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .main-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .thumbnail-container {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        
+        .thumbnail {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+        
+        .thumbnail:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        
+        .thumbnail.active {
+            border-color: var(--accent-color);
+        }
+        
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .price {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .stars {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+        
+        .description {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .features-section {
+            background-color: white;
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .features-list {
+            list-style-type: none;
+            margin: 2rem 0;
+        }
+        
+        .features-list li {
+            margin-bottom: 1.2rem;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1rem;
+        }
+        
+        .features-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        .specs-table th, .specs-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .specs-table th {
+            background-color: var(--light-color);
+            font-weight: bold;
+        }
+        
+        .specs-table tr:hover {
+            background-color: rgba(184, 134, 11, 0.05);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        
+        .cta-button:hover {
+            background-color: #9e7209;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .variants {
+            margin: 2rem 0;
+        }
+        
+        .variant-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .variant-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .variant-option {
+            padding: 8px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .variant-option:hover, .variant-option.active {
+            border-color: var(--accent-color);
+            background-color: rgba(184, 134, 11, 0.1);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .product-showcase {
+                flex-direction: column;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .price {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Michael Kors</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="container product-showcase">
+            <div class="product-images">
+                <img src="https://m.media-amazon.com/images/I/71-32BOYPrL._AC_SL1500.jpg" alt="Michael Kors Oversized Slim Runway Men's Watch" class="main-image" id="mainImage">
+                <div class="thumbnail-container">
+                    <img src="https://m.media-amazon.com/images/I/71-32BOYPrL._AC_SL1500.jpg" alt="Main view" class="thumbnail active" onclick="changeImage(this.src)">
+                    <img src="https://m.media-amazon.com/images/I/31cMo88IO2L._AC_SL1500.jpg" alt="Side view" class="thumbnail" onclick="changeImage(this.src)">
+                    <img src="https://m.media-amazon.com/images/I/21ZZ2fWg5eL._AC_SL1500.jpg" alt="Close-up view" class="thumbnail" onclick="changeImage(this.src)">
+                    <img src="https://m.media-amazon.com/images/I/41DFpvZXogL._AC_SL1500.jpg" alt="Wrist view" class="thumbnail" onclick="changeImage(this.src)">
+                    <img src="https://m.media-amazon.com/images/I/31sQlG3VOHL._AC_SL1500.jpg" alt="Detail view" class="thumbnail" onclick="changeImage(this.src)">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1>Michael Kors Oversized Slim Runway Men's Watch</h1>
+                <div class="price">$225.00</div>
+                <div class="rating">
+                    <div class="stars">★★★★★</div>
+                    <span>4.7/5 (9,089 ratings)</span>
+                </div>
+                
+                <p class="description">
+                    The black IP Michael Kors Slim Runway watch is polished perfection. A classic three-link bracelet and monochromatic sunray dial with stick indexes add up to a wear-with-everything timepiece that dresses up and down with ease. This elegant stainless steel watch combines modern design with timeless sophistication, making it the perfect accessory for any occasion.
+                </p>
+                
+                <div class="variants">
+                    <h3 class="variant-title">Available Colors:</h3>
+                    <div class="variant-options">
+                        <div class="variant-option active">Black</div>
+                        <div class="variant-option">Beige Gold</div>
+                        <div class="variant-option">Black Chronograph</div>
+                        <div class="variant-option">Gold/Black</div>
+                        <div class="variant-option">Silver Chronograph</div>
+                    </div>
+                </div>
+                
+                <button class="cta-button">Add to Cart</button>
+            </div>
+        </section>
+        
+        <section class="features-section">
+            <div class="container">
+                <h2>Key Features</h2>
+                <ul class="features-list">
+                    <li>Classic three-link bracelet and monochromatic sunray dial with stick indexes</li>
+                    <li>Round 44mm stainless steel case with a black dial</li>
+                    <li>Mineral crystal face that resists scratches</li>
+                    <li>Black stainless steel bracelet band with 22mm band width</li>
+                    <li>Links can be removed for a customized fit</li>
+                    <li>Quartz movement with three-hand analog display</li>
+                    <li>Water resistant up to 50m (165ft): Wearable while swimming in shallow water</li>
+                    <li>5 ATM water resistance rating</li>
+                    <li>Versatile design that dresses up and down with ease</li>
+                    <li>Premium stainless-steel construction for durability</li>
+                </ul>
+                
+                <h2>Technical Specifications</h2>
+                <table class="specs-table">
+                    <tr>
+                        <th>Specification</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Brand</td>
+                        <td>Michael Kors</td>
+                    </tr>
+                    <tr>
+                        <td>Model Number</td>
+                        <td>MK8507</td>
+                    </tr>
+                    <tr>
+                        <td>Case Size</td>
+                        <td>44mm</td>
+                    </tr>
+                    <tr>
+                        <td>Case Material</td>
+                        <td>Stainless Steel</td>
+                    </tr>
+                    <tr>
+                        <td>Band Width</td>
+                        <td>22mm</td>
+                    </tr>
+                    <tr>
+                        <td>Band Material</td>
+                        <td>Stainless Steel</td>
+                    </tr>
+                    <tr>
+                        <td>Movement</td>
+                        <td>Quartz</td>
+                    </tr>
+                    <tr>
+                        <td>Display</td>
+                        <td>Analog</td>
+                    </tr>
+                    <tr>
+                        <td>Water Resistance</td>
+                        <td>50m / 5 ATM</td>
+                    </tr>
+                    <tr>
+                        <td>Crystal</td>
+                        <td>Mineral</td>
+                    </tr>
+                </table>
+                
+                <h2>Product Description</h2>
+                <p class="description">
+                    The Michael Kors Oversized Slim Runway Men's Watch exemplifies modern elegance with its sleek black design. This sophisticated timepiece features a round 44mm stainless steel case paired with a black dial that creates a bold, monochromatic look. The mineral crystal face provides excellent scratch resistance, ensuring your watch maintains its pristine appearance.
+                </p>
+                <p class="description">
+                    The black stainless steel bracelet band measures 22mm in width and can be customized to fit your wrist perfectly by removing links as needed. Powered by reliable quartz movement, this watch offers precise timekeeping with its three-hand analog display.
+                </p>
+                <p class="description">
+                    With water resistance up to 50 meters (165 feet), this watch is suitable for swimming in shallow water and has a 5 ATM rating. The versatile design of the Slim Runway watch makes it an ideal accessory for both casual and formal occasions, effortlessly elevating any outfit.
+                </p>
+                <p class="description">
+                    Whether you're attending a business meeting, enjoying a night out, or simply going about your daily activities, this Michael Kors timepiece adds a touch of sophistication to your look. Its timeless design ensures it will remain a stylish accessory for years to come.
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Michael Kors. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+            
+            // Update active thumbnail
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                if (thumb.src === src) {
+                    thumb.classList.add('active');
+                } else {
+                    thumb.classList.remove('active');
+                }
+            });
+        }
+        
+        // Add click event to variant options
+        const variantOptions = document.querySelectorAll('.variant-option');
+        variantOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                variantOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Add click event to CTA button
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            alert('Item added to cart!');
+        });
+    </script>
+</body>
+</html>
