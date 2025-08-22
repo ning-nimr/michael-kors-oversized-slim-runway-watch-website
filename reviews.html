@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Kors Runway Black Watch - Reviews</title>
+    <style>
+        :root {
+            --primary-color: #000;
+            --secondary-color: #333;
+            --accent-color: #d4af37;
+            --light-color: #f8f8f8;
+            --gray-color: #e0e0e0;
+            --text-color: #333;
+            --white-color: #fff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .product-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .product-image {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            flex: 1;
+            padding: 0 2rem;
+        }
+        
+        .product-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+        }
+        
+        .stars {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        
+        .rating-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .rating-count {
+            color: var(--secondary-color);
+            margin-left: 0.5rem;
+        }
+        
+        .rating-distribution {
+            margin: 2rem 0;
+            background-color: var(--white-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .rating-bar {
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+        }
+        
+        .rating-label {
+            width: 60px;
+        }
+        
+        .bar-container {
+            flex: 1;
+            height: 12px;
+            background-color: var(--gray-color);
+            border-radius: 10px;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+        
+        .bar {
+            height: 100%;
+            background-color: var(--accent-color);
+            border-radius: 10px;
+        }
+        
+        .rating-percentage {
+            width: 40px;
+            text-align: right;
+        }
+        
+        .reviews-section {
+            margin: 2rem 0;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .review-card {
+            background-color: var(--white-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        
+        .reviewer-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .reviewer-name {
+            font-weight: bold;
+        }
+        
+        .review-date {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+        
+        .review-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .review-text {
+            margin-bottom: 1rem;
+        }
+        
+        .review-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        
+        .review-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .review-image:hover {
+            transform: scale(1.1);
+        }
+        
+        .variant-info {
+            font-style: italic;
+            color: var(--secondary-color);
+            margin-top: 0.5rem;
+        }
+        
+        .verified-badge {
+            background-color: var(--accent-color);
+            color: var(--white-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+        
+        .no-reviews {
+            text-align: center;
+            padding: 3rem;
+            background-color: var(--white-color);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .no-reviews-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .review-aspects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 1.5rem 0;
+        }
+        
+        .aspect {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .aspect.positive {
+            background-color: #e6f7e6;
+            color: #2e7d32;
+        }
+        
+        .aspect.mixed {
+            background-color: #fff8e1;
+            color: #ff8f00;
+        }
+        
+        .aspect.negative {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .product-header {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .product-image {
+                width: 250px;
+                margin-bottom: 1.5rem;
+            }
+            
+            .product-info {
+                padding: 0;
+                text-align: center;
+            }
+            
+            .rating {
+                justify-content: center;
+            }
+            
+            .review-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Michael Kors</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="product-header">
+            <img src="https://m.media-amazon.com/images/I/71-32BOYPrL._AC_SL1500.jpg" alt="Michael Kors Runway Black Watch" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">Michael Kors Oversized Slim Runway Men's Watch, Stainless Steel Watch for Men</h2>
+                <div class="rating">
+                    <div class="stars">★★★★★</div>
+                    <span class="rating-number">4.7</span>
+                    <span class="rating-count">(9,089 ratings)</span>
+                </div>
+                <p>The black IP Michael Kors Slim Runway watch is polished perfection. A classic three-link bracelet and monochromatic sunray dial with stick indexes add up to a wear-with-everything timepiece that dresses up and down with ease.</p>
+            </div>
+        </div>
+        
+        <div class="rating-distribution">
+            <h3>Rating Distribution</h3>
+            <div class="rating-bar">
+                <span class="rating-label">5 star</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 87%"></div>
+                </div>
+                <span class="rating-percentage">87%</span>
+            </div>
+            <div class="rating-bar">
+                <span class="rating-label">4 star</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 8%"></div>
+                </div>
+                <span class="rating-percentage">8%</span>
+            </div>
+            <div class="rating-bar">
+                <span class="rating-label">3 star</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 2%"></div>
+                </div>
+                <span class="rating-percentage">2%</span>
+            </div>
+            <div class="rating-bar">
+                <span class="rating-label">2 star</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 1%"></div>
+                </div>
+                <span class="rating-percentage">1%</span>
+            </div>
+            <div class="rating-bar">
+                <span class="rating-label">1 star</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 2%"></div>
+                </div>
+                <span class="rating-percentage">2%</span>
+            </div>
+        </div>
+        
+        <div class="review-aspects">
+            <div class="aspect positive">Looks: Positive</div>
+            <div class="aspect positive">Value for money: Positive</div>
+            <div class="aspect positive">Quality: Positive</div>
+            <div class="aspect positive">Gift value: Positive</div>
+            <div class="aspect positive">Weight: Positive</div>
+            <div class="aspect positive">Readability: Positive</div>
+            <div class="aspect positive">Comfort: Positive</div>
+            <div class="aspect mixed">Size: Mixed</div>
+        </div>
+        
+        <div class="reviews-section">
+            <h2 class="section-title">Customer Reviews</h2>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <span class="reviewer-name">Nordia P.</span>
+                        <span class="review-date">August 16, 2025</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <h3 class="review-title">Classy and Unique</h3>
+                <p class="review-text">Listen! I love this and my man loooves it. I needed something cute but different and I think the black did that. It can go with very formal or casual looks. I even take a wear from it sometimes. It's too cute. Has a strap that adjusts well so I do not need to take to a jewelry shop to adjust to fit wrist perfectly</p>
+                <div class="review-images">
+                    <img src="https://m.media-amazon.com/images/I/81p8Wx-sRgL._SY88.jpg" alt="Customer review image" class="review-image">
+                </div>
+                <div class="variant-info">Color: Black</div>
+                <span class="verified-badge">Verified Purchase</span>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <span class="reviewer-name">Toya</span>
+                        <span class="review-date">August 8, 2025</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <h3 class="review-title">Perfect watch</h3>
+                <p class="review-text">Durable fits well extremely good quality</p>
+                <div class="variant-info">Color: Black</div>
+                <span class="verified-badge">Verified Purchase</span>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <span class="reviewer-name">Amber</span>
+                        <span class="review-date">June 6, 2025</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <h3 class="review-title">Timeless Style</h3>
+                <p class="review-text">Timeless Style I couldn't be happier with this watch. The watch has a sleek, masculine design that works perfectly for both casual and formal occasions. If you're looking for a dependable, stylish timepiece that elevates your look without breaking the bank, this one definitely delivers.</p>
+                <div class="variant-info">Color: Black</div>
+                <span class="verified-badge">Verified Purchase</span>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <span class="reviewer-name">Johana Rodriguez Alcover</span>
+                        <span class="review-date">August 1, 2025</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <h3 class="review-title">Reloj</h3>
+                <p class="review-text">The Best give for my husband</p>
+                <div class="review-images">
+                    <img src="https://m.media-amazon.com/images/I/7129UqOu4kL._SY88.jpg" alt="Customer review image" class="review-image">
+                </div>
+                <div class="variant-info">Color: Black</div>
+                <span class="verified-badge">Verified Purchase</span>
+            </div>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <span class="reviewer-name">jeff</span>
+                        <span class="review-date">January 4, 2023</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <h3 class="review-title">Great dress watch, not for everyday use</h3>
+                <p class="review-text">I really like this watch it goes amazingly with any suit and has a great build quality. Not something I wear for everyday use but an amazing dress watch which is what I bought it for.</p>
+                <div class="variant-info">Color: Black</div>
+                <span class="verified-badge">Verified Purchase</span>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Michael Kors. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Add hover effect to stars
+        const stars = document.querySelectorAll('.stars');
+        stars.forEach(star => {
+            star.addEventListener('mouseover', () => {
+                star.style.transform = 'scale(1.1)';
+            });
+            star.addEventListener('mouseout', () => {
+                star.style.transform = 'scale(1)';
+            });
+        });
+        
+        // Make review images clickable to show larger version
+        const reviewImages = document.querySelectorAll('.review-image');
+        reviewImages.forEach(image => {
+            image.addEventListener('click', () => {
+                const fullSizeUrl = image.src.replace('_SY88', '');
+                window.open(fullSizeUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
